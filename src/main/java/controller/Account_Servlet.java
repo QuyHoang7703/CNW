@@ -95,14 +95,9 @@ public class Account_Servlet extends HttpServlet {
 				url = "./register.jsp";
 				request.getRequestDispatcher(url).forward(request, response);
 			}
-			
-			
-		
-			
-			
-			
-			
+	
 		}
+		
 		
 
 		

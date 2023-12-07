@@ -17,7 +17,7 @@ public class Account_DAO {
 	public Account_DAO() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			cnn = DriverManager.getConnection("jdbc:mysql://localhost:3308/bt_nhom_cnw", "root", "");
+			cnn = DriverManager.getConnection("jdbc:mysql://localhost:3308/bt_nhom_cnw_3", "root", "");
 			statement = cnn.createStatement();
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block

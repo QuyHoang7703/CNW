@@ -7,9 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
-		<jsp:include page="./header.jsp"></jsp:include>
-		main day 
-
+	<form action="">
+		<table>
+			
+		</table>
+	</form>
 </body>
 </html>
