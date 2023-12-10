@@ -53,7 +53,6 @@ public class ProductView_DAO {
 				list.add(productView);
 			}
 			
-			System.out.println("ko co loi ne");
 			return list;
 			
 		} catch (SQLException e) {
@@ -63,6 +62,8 @@ public class ProductView_DAO {
 		}
 		
 	}
+	
+	
 	
 	public class ImageUtils {
 	    public static String encodeImageToBase64(byte[] imageData) {

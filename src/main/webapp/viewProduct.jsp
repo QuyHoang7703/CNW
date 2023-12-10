@@ -37,8 +37,8 @@ h2{
 </head>
 <body>
 	<jsp:include page="./header.jsp"></jsp:include>
-	 <form action="process_add_shoe.jsp" method="post">
-        <button class="btn_add">Thêm sản phẩm</button>
+	 <form action="ProductView_Servlet" method="post">
+        <button class="btn_add" value="add" name="btn_add">Thêm sản phẩm</button>
         <h2>Danh sách sản phẩm</h2>
         <table width="100%" >
             <thead>

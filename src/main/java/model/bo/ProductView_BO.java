@@ -14,4 +14,6 @@ public class ProductView_BO {
 	public ArrayList<ProductView> getProductView_BO(){
 		return dao.getProductView();
 	}
+	
+	
 }
