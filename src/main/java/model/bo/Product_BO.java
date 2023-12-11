@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 import model.bean.Product;
 import model.bean.Product_Category;
+import model.bean.Size;
 import model.dao.Product_DAO;
 
 public class Product_BO {
@@ -32,5 +33,22 @@ public class Product_BO {
 			check = true;
 		}
 		return check;
+	}
+	
+	public void deleteProduct(String id) {
+		dao.deleteProduct(id);
+	}
+	
+	public Product getProductById(String id) {
+		return dao.getProductById(id);
+		
+	}
+	
+	public ArrayList<Size> getSizes(){
+		return dao.getSizes();
+	}
+	
+	public void updateProduct(Product product) {
+		dao.updateProduct(product);
 	}
 }

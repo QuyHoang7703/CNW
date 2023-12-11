@@ -151,7 +151,9 @@
             <button name="btn_addProduct" value="btn_addProduct" type="submit">Thêm sản phẩm</button>
           	<% 
 		   		String message = (String)request.getAttribute("message");
+               
 		   		if(message!=null){			
+		   			
 		   	%>
 		 		<p style="color: red"><%= message %></p>
 		   	<%}else{ %>

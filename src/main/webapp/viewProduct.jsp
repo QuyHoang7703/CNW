@@ -37,6 +37,12 @@ h2{
 </head>
 <body>
 	<jsp:include page="./header.jsp"></jsp:include>
+	<%
+		String message = (String)request.getAttribute("message");
+		if(message!=null){	
+	%>
+	   <script type="text/javascript">alert("<%= message %>");</script>
+	 <%} %>
 	 <form action="ProductView_Servlet" method="post">
         <button class="btn_add" value="add" name="btn_add">Thêm sản phẩm</button>
         <h2>Danh sách sản phẩm</h2>
@@ -62,7 +68,10 @@ h2{
             		<td><%=product.getId_product() %></td>
             		<td><img alt="product_image" src="data:image/jpeg;base64, <%= product.getImage_product()%>" width="100" height="100"></td>
             		<td><%=product.getPrice() %></td>
-            		<td><button>Cập nhập</button> <button name="btn_del" value="<%=product.getId_product()%>">Xóa</button></td>
+            		<td>
+            			<button name="btn_update" value="<%=product.getId_product()%>" >Cập nhập</button> 
+            			<button name="btn_del" value="<%=product.getId_product()%>">Xóa</button>
+            		</td>
             	</tr>
             	<%} %>
               

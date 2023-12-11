@@ -77,7 +77,6 @@ public class Account_DAO {
 				list_username.add(resultSet.getString("username"));
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

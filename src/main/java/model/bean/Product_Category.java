@@ -18,7 +18,6 @@ public class Product_Category {
 	}
 	
 	public Product_Category(String id, String name_category) {
-		super();
 		this.id = id;
 		this.name_category = name_category;
 	}
